@@ -1,17 +1,15 @@
 import React from 'react'
 
-const UserInput = ({input}) => (
-    <li>
-        <ul>
-            <li>{input.fname}</li>
-            <li>{input.lname}</li>
-            <li>{input.phone}</li>
-            <li>{input.email}</li>
-            <li>{input.addr}</li>
-        </ul>
-    </li>
+const UserInput = ({ input }) => (
+    <React.Fragment>
+        <tr>
+            <td>{input.fname}</td>
+            <td>{input.lname}</td>
+            <td>{input.phone}</td>
+            <td>{input.email}</td>
+            <td>{input.addr}</td>
+        </tr>
+    </React.Fragment>
 )
-
-
 
 export default UserInput

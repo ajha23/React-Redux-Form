@@ -3,14 +3,25 @@ import { connect } from 'react-redux'
 import UserInput from './userInput'
 
 const UserInputList = ({ inputList }) => (
-  <ol>
-    {inputList.map(input =>
-      <UserInput
-        key={input.id}
-        {...input}
-      />
-    )}
-  </ol>
+  <table>
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Mobile</th>
+        <th>Email</th>
+        <th>Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      {inputList.map(input =>
+        <UserInput
+          key={input.id}
+          {...input}
+        />
+      )}
+    </tbody>
+  </table>
 )
 
 

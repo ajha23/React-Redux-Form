@@ -1,7 +1,7 @@
 import React from 'react';
-import Form from './Form';
+import Form from './components/Form';
 import './App.css';
-import DisplayList from './DisplayList';
+import DisplayList from './components/DisplayList';
 
 const App = () => (
   <div className='container'>

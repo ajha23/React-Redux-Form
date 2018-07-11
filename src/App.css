@@ -1,9 +1,6 @@
 * {
   box-sizing: border-box;
 }
-ul {
-  color: #4CAF50
-}
 
 input[type=text], select, textarea {
   width: 100%;
@@ -65,3 +62,20 @@ input[type=submit]:hover {
   }
 }
 
+/*------ CSS For Table Data--------*/
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}

@@ -27,8 +27,8 @@ class Form extends Component {
     handleSubmit = (event) => {
         event.preventDefault();
         this.props.dispatch(addTolist(this.state));
-        //document.getElementById('ContactForm').reset();
-        this.formReset.current.reset();
+        document.getElementById('ContactForm').reset();
+        //this.formReset.current.reset();
     }
 
     render() {
