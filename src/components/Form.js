@@ -28,7 +28,7 @@ class Form extends Component {
         event.preventDefault();
         this.props.dispatch(addTolist(this.state));
         document.getElementById('ContactForm').reset();
-        //this.formReset.current.reset();
+        this.props.history.push('/table');
     }
 
     render() {
