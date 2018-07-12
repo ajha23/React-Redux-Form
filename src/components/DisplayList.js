@@ -5,7 +5,7 @@ import UserInput from './userInput'
 const UserInputList = ({ inputList, history }) => {
 
   const backButtonHandler = () => {
-    history.push('/');
+    history.replace('/');
   }
 
   return (< React.Fragment >
