@@ -15,7 +15,7 @@ label {
   display: inline-block;
 }
 
-input[type=submit] {
+input[type=submit],input[type=button] {
   background-color: #4CAF50;
   color: white;
   padding: 12px 20px;
@@ -23,9 +23,10 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
   float: right;
+  margin-top: 14px;
 }
 
-input[type=submit]:hover {
+input[type=button]:hover, input[type=submit]:hover {
   background-color: #45a049;
 }
 
@@ -56,7 +57,7 @@ input[type=submit]:hover {
 
 
 @media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
+  .col-25, .col-75, input[type=submit], input[type=button] {
       width: 100%;
       margin-top: 0;
   }
